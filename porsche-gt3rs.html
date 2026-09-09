@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porsche 911 GT3 RS</title>
+    <!-- Bootstrap 5 CSS (быстрая и чистая сетка) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Иконки Bootstrap (опционально) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <style>
+        /* лёгкие личные штрихи */
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        }
+        .hero-porsche {
+            background: linear-gradient(145deg, #0b0b0b 0%, #1a1a1a 100%);
+            color: #f0f0f0;
+            padding: 4rem 0 3rem 0;
+            border-bottom: 4px solid #c11f2b;
+        }
+        .hero-porsche h1 {
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+        .hero-porsche .badge-rs {
+            background-color: #c11f2b;
+            color: #fff;
+            font-weight: 600;
+            padding: 0.4rem 1.2rem;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+        .section-title {
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            border-left: 6px solid #c11f2b;
+            padding-left: 1rem;
+        }
+        .spec-card {
+            background: #f8f9fa;
+            border-radius: 20px;
+            padding: 1.8rem 1.2rem;
+            transition: transform 0.2s;
+            height: 100%;
+            border: 1px solid #e9ecef;
+        }
+        .spec-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+            border-color: #c11f2b;
+        }
+        .spec-card i {
+            font-size: 2.2rem;
+            color: #c11f2b;
+        }
+        .img-gt3rs {
+            border-radius: 24px;
+            box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.4);
+            width: 100%;
+            height: auto;
+            background: #e9ecef;
+        }
+        .feature-list li {
+            margin-bottom: 0.7rem;
+            font-size: 1.05rem;
+        }
+        .feature-list i {
+            color: #c11f2b;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        footer a {
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        footer a:hover {
+            color: #c11f2b !important;
+        }
+        .footer-brand {
+            font-weight: 600;
+            letter-spacing: -0.3px;
+        }
+        .btn-outline-rs {
+            color: #c11f2b;
+            border-color: #c11f2b;
+            border-radius: 40px;
+            padding: 0.5rem 1.8rem;
+            font-weight: 500;
+        }
+        .btn-outline-rs:hover {
+            background: #c11f2b;
+            color: #fff;
+            border-color: #c11f2b;
+        }
+        .bg-soft-dark {
+            background-color: #f2f2f6;
+        }
+        @media (max-width: 576px) {
+            .hero-porsche {
+                padding: 2.5rem 0 2rem 0;
+                text-align: center;
+            }
+            .hero-porsche h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ШАПКА (Navbar) -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">
+                    <i class="bi bi-speedometer2 me-2" style="color: #c11f2b;"></i>
+                    <span class="footer-brand">GT3 RS</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#specs">Характеристики</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#design">Дизайн</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#performance">Двигатель</a></li>
+                        <li class="nav-item ms-lg-2">
+                            <a class="btn btn-outline-rs btn-sm" href="#contact">Связаться</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ГЕРОЙ / ОСНОВНАЯ ИНФОРМАЦИЯ -->
+    <section class="hero-porsche">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <span class="badge-rs d-inline-block mb-2"><i class="bi bi-star-fill me-1"></i> Легенда трека</span>
+                    <h1 class="display-4 fw-bold">Porsche 911 GT3 RS</h1>
+                    <p class="lead mt-3" style="color: #d0d0d0;">
+                        Аэродинамика, рождённая в гонках. 4,0-литровый оппозитный двигатель мощностью 525 л.с. 
+                        и снаряжённая масса всего 1450 кг. GT3 RS — это не просто спорткар, это трековый инструмент 
+                        с номерными знаками.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <span class="bg-dark bg-opacity-25 px-3 py-2 rounded-4"><i class="bi bi-clock-history me-1"></i> 0–100 км/ч за 3,2 с</span>
+                        <span class="bg-dark bg-opacity-25 px-3 py-2 rounded-4"><i class="bi bi-arrow-up-circle me-1"></i> 296 км/ч макс.</span>
+                        <span class="bg-dark bg-opacity-25 px-3 py-2 rounded-4"><i class="bi bi-droplet me-1"></i> 9,7 л / 100 км</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end">
+                    <!-- изображение (заглушка, но можно заменить на реальное) -->
+                    <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=600&h=400&fit=crop&crop=center&auto=format" 
+                         alt="Porsche 911 GT3 RS" 
+                         class="img-fluid img-gt3rs" 
+                         style="max-height: 340px; object-fit: cover;" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК ХАРАКТЕРИСТИК (СПЕЦИФИКАЦИИ) -->
+    <section id="specs" class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-4">⚡ Ключевые характеристики</h2>
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6">
+                    <div class="spec-card text-center">
+                        <i class="bi bi-fuel-pump-diesel"></i>
+                        <h5 class="mt-3 fw-semibold">Двигатель</h5>
+                        <p class="mb-1">4.0 л, 6-цилиндровый оппозитный</p>
+                        <p class="fw-bold text-dark">525 л.с. / 465 Н·м</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="spec-card text-center">
+                        <i class="bi bi-speedometer"></i>
+                        <h5 class="mt-3 fw-semibold">Динамика</h5>
+                        <p class="mb-1">0–100 км/ч</p>
+                        <p class="fw-bold text-dark">3,2 с</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="spec-card text-center">
+                        <i class="bi bi-arrows-angle-expand"></i>
+                        <h5 class="mt-3 fw-semibold">Вес / аэродинамика</h5>
+                        <p class="mb-1">Снаряжённая масса</p>
+                        <p class="fw-bold text-dark">1450 кг · прижимная сила до 409 кг</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="spec-card text-center">
+                        <i class="bi bi-transmission"></i>
+                        <h5 class="mt-3 fw-semibold">КПП</h5>
+                        <p class="mb-1">7-ступенчатый PDK</p>
+                        <p class="fw-bold text-dark">с функцией Track</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="spec-card text-center">
+                        <i class="bi bi-trophy"></i>
+                        <h5 class="mt-3 fw-semibold">Трек-рекорд</h5>
+                        <p class="mb-1">Нюрбургринг</p>
+                        <p class="fw-bold text-dark">6:49.328 мин</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="spec-card text-center">
+                        <i class="bi bi-wind"></i>
+                        <h5 class="mt-3 fw-semibold">Аэродинамика</h5>
+                        <p class="mb-1">Активное заднее антикрыло</p>
+                        <p class="fw-bold text-dark">система DRS (для трека)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ДИЗАЙН И АЭРОДИНАМИКА -->
+    <section id="design" class="py-5 bg-soft-dark">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-3">Дизайн <span style="color: #c11f2b;">•</span> Аэродинамика</h2>
+                    <p class="fs-5">
+                        Каждая линия GT3 RS подчинена воздушному потоку. Широкие колёсные арки, 
+                        центральный радиатор, массивное заднее антикрыло «Swan Neck» и активные 
+                        аэродинамические элементы создают прижимную силу до 409 кг — больше, чем 
+                        у многих гоночных автомобилей.
+                    </p>
+                    <ul class="list-unstyled feature-list mt-3">
+                        <li><i class="bi bi-check-circle-fill"></i> Карбоновый капот с NACA-каналами</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Заднее крыло с гидравлической регулировкой</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Диффузор и воздуховоды в стиле RSR</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Магниевые диски (опционально)</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=600&h=400&fit=crop&crop=center&auto=format" 
+                         alt="Porsche GT3 RS дизайн" 
+                         class="img-fluid rounded-4 shadow" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ДВИГАТЕЛЬ И ЗВУК -->
+    <section id="performance" class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-5 flex-lg-row-reverse">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-3">4.0-литровый <span style="color: #c11f2b;">оппозитник</span></h2>
+                    <p class="fs-5">
+                        Атмосферный мотор с индивидуальными дроссельными заслонками и 
+                        системой смазки с сухим картером. Максимальная мощность — 525 л.с. 
+                        при 8500 об/мин. Звук на высокой частоте — это фирменный вой, 
+                        который невозможно спутать ни с чем.
+                    </p>
+                    <div class="row g-3 mt-3">
+                        <div class="col-6">
+                            <div class="bg-light p-3 rounded-4 border">
+                                <small class="text-muted">Макс. мощность</small>
+                                <p class="fw-bold fs-5 mb-0">525 л.с.</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="bg-light p-3 rounded-4 border">
+                                <small class="text-muted">Крутящий момент</small>
+                                <p class="fw-bold fs-5 mb-0">465 Н·м</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="bg-light p-3 rounded-4 border">
+                                <small class="text-muted">Красная зона</small>
+                                <p class="fw-bold fs-5 mb-0">9000 об/мин</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="bg-light p-3 rounded-4 border">
+                                <small class="text-muted">Расход (комб.)</small>
+                                <p class="fw-bold fs-5 mb-0">9,7 л/100 км</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=600&h=400&fit=crop&crop=center&auto=format" 
+                         alt="Porsche GT3 RS двигатель" 
+                         class="img-fluid rounded-4 shadow" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК «ПОЧЕМУ GT3 RS» (доп. информация) -->
+    <section class="py-5 bg-soft-dark">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-4">
+                    <div class="p-4">
+                        <i class="bi bi-stopwatch display-4" style="color: #c11f2b;"></i>
+                        <h5 class="mt-3">Создан для кругов</h5>
+                        <p class="text-muted">Каждая деталь отточена для максимальной производительности на треке, но при этом машина остаётся пригодной для дорог общего пользования.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4">
+                        <i class="bi bi-droplet-half display-4" style="color: #c11f2b;"></i>
+                        <h5 class="mt-3">Интеллектуальное охлаждение</h5>
+                        <p class="text-muted">Центральный радиатор и продуманные воздуховоды обеспечивают стабильную температуру даже при интенсивной эксплуатации.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4">
+                        <i class="bi bi-hand-index-thumb display-4" style="color: #c11f2b;"></i>
+                        <h5 class="mt-3">Точность управления</h5>
+                        <p class="text-muted">Задний привод, активный дифференциал и точное рулевое управление делают GT3 RS одной из самых «разговорчивых» машин в своём классе.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОНТАКТ / ПОДВАЛ (footer) -->
+    <footer id="contact" class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <h5 class="fw-bold"><i class="bi bi-speedometer2 me-2" style="color: #c11f2b;"></i>Porsche GT3 RS</h5>
+                    <p class="text-light-emphasis" style="opacity: 0.8;">
+                        Спроектирован для тех, кто живёт скоростью. 
+                        Присоединяйтесь к сообществу поклонников легендарного спорткара.
+                    </p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-white-50" style="font-size: 1.5rem;"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white-50" style="font-size: 1.5rem;"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="text-white-50" style="font-size: 1.5rem;"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-semibold">Страницы</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50" style="text-decoration: none;">Главная</a></li>
+                        <li><a href="#specs" class="text-white-50" style="text-decoration: none;">Характеристики</a></li>
+                        <li><a href="#design" class="text-white-50" style="text-decoration: none;">Дизайн</a></li>
+                        <li><a href="#performance" class="text-white-50" style="text-decoration: none;">Двигатель</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-semibold">Контакты</h6>
+                    <address class="text-white-50" style="font-style: normal; opacity: 0.8;">
+                        <i class="bi bi-geo-alt me-2"></i> Штутгарт, Германия<br />
+                        <i class="bi bi-telephone me-2"></i> +49 711 911 0<br />
+                        <i class="bi bi-envelope me-2"></i> info@porsche-gt3rs.com
+                    </address>
+                    <p class="text-white-50 small mt-2">
+                        <i class="bi bi-info-circle me-1"></i> Свяжитесь с нами для тест-драйва
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: #444;" />
+            <div class="d-flex flex-wrap justify-content-between align-items-center">
+                <p class="mb-0 text-white-50 small">&copy; 2026 Porsche GT3 RS. Неофициальный сайт.</p>
+                <span class="text-white-50 small">Сделано с <i class="bi bi-heart-fill text-danger"></i> для поклонников</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (для работы навигационного меню) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>
